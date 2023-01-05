@@ -55,4 +55,8 @@
         <span id="start_btn">START</span>
     </div>
     <script src="game.js"></script>
+   -----------> Hier moeten nog divs voor de buttons om ze aan te passen en te verplaatsen <-------------
+	<button type="button">EASY</button>
+	<button type="button">MEDIUM</button>
+	<button type="button">HARD</button>
 <script>
