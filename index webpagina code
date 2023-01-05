@@ -13,10 +13,10 @@
         position: relative;
         top: 50%;
         left: 50%;
-        margin-left: -50px;
-        margin-top: -50px;
+        margin-left: 20px;
+        margin-top: 400px;
         display: block;
-        font-size: 1.3em;
+        font-size: 40px;
         width: 100px;
         height: 100px;
         font-weight: light;
