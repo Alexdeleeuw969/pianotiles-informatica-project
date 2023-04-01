@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Piano-Tiles</title>
@@ -16,7 +17,7 @@
         margin-left: 20px;
         margin-top: 400px;
         display: block;
-        font-size: 40px;
+        font-size: 30px;
         width: 100px;
         height: 100px;
         font-weight: light;
@@ -24,12 +25,11 @@
         text-align: center;
         line-height: 100px;
         letter-spacing: -1px;
-        color: white;
+        color: black;
         border: none;
         border-radius: 50%;
-        background: #5a99d4;
+        background: #ffffff;
         cursor: pointer;
-        box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
         transition: width 0.9s, height 0.9s ;
     }
     #start_btn:hover{
@@ -37,12 +37,107 @@
         height: 105px;
     }
     body {
-        background: #36D1DC;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #ffffff;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #080808, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #080808, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
+	
+	#easy  {
+	position: absolute;
+	top: 500;
+	left: 25%;
+	width: 50px;
+	height: 100px;
+	 }
 
+   
+	#easy_btn  {
+	position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: 50px;
+    margin-top: 250px;
+    display: block;
+    font-size: 15px;
+    width: 65px;
+    height: 65px;
+    font-weight: light;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: -1px;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    transition: width 0.9s, height 0.9s ;
+	}
+
+    #medium  {
+    position: absolute;
+	top: 500;
+	left: 47%;
+	width: 50px;
+	height: 100px;
+	}
+	
+	#medium_btn  {
+	position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: 200px;
+    display: block;
+    font-size: 15px;
+    width: 65px;
+    height: 65px;
+    font-weight: light;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: -1px;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    transition: width 0.9s, height 0.9s ;
+	}
+	
+	
+	#hard  {
+	position: absolute;
+	top: 500;
+	left: 70%;
+	width: 50px;
+	height: 100px;
+	}
+	
+	#hard_btn  {
+	position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -70px;
+    margin-top: 250px;
+    display: block;
+    font-size: 15px;
+    width: 65px;
+    height: 65px;
+    font-weight: light;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: -1px;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    transition: width 0.9s, height 0.9s ;
+	}
+	
 </style>
 </head>
 <body>
@@ -52,11 +147,33 @@
     <audio  id="music" src="MUSIC.mp3" loop ></audio>
 
     <div id="btn">
-        <span id="start_btn">START</span>
+    <span id="start_btn">START</span>
     </div>
     <script src="game.js"></script>
-   -----------> Hier moeten nog divs voor de buttons om ze aan te passen en te verplaatsen <-------------
-	<button type="button">EASY</button>
-	<button type="button">MEDIUM</button>
-	<button type="button">HARD</button>
+ 
+	
+   <div id="easy"> 
+		<span id="easy_btn">EASY</span>
+    </div>
+    <script src="game.js"></script>
+	
+	<div id="medium">
+	    <span id="medium_btn">MEDIUM</span>
+	</div>
+    <script src="game.js"></script>
+
+    
+	<div id="hard">
+	    <span id="hard_btn">HARD</span>
+	</div>
+    <script src="game.js"></script>
+
+	
 <script>
+
+
+
+
+
+
+</html>
